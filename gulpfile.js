@@ -52,9 +52,9 @@ function previewReload(done) {
 
 //Development Tasks
 function devHTML() {
-  return src(`${options.paths.src.base}/**/*.html`)
-    .pipe(webpHtml())
-    .pipe(dest(options.paths.dist.base));
+  return src(`${options.paths.src.base}/**/*.html`).pipe(
+    dest(options.paths.dist.base)
+  );
 }
 
 function devStyles() {
@@ -80,13 +80,9 @@ function devScripts() {
 }
 
 function devImages() {
-  return src(`${options.paths.src.img}/**/*`)
-    .pipe(
-      webP({
-        quality: 70,
-      })
-    )
-    .pipe(dest(options.paths.dist.img));
+  return src(`${options.paths.src.img}/**/*`).pipe(
+    dest(options.paths.dist.img)
+  );
 }
 function devImagesDefauly() {
   return src(`${options.paths.src.img}/**/*`).pipe(
@@ -117,9 +113,9 @@ function devClean() {
 
 //Production Tasks (Optimized Build for Live/Production Sites)
 function prodHTML() {
-  return src(`${options.paths.src.base}/**/*.html`)
-    .pipe(webpHtml())
-    .pipe(dest(options.paths.build.base));
+  return src(`${options.paths.src.base}/**/*.html`).pipe(
+    dest(options.paths.build.base)
+  );
 }
 
 function prodStyles() {
@@ -151,13 +147,6 @@ function prodScripts() {
 
 function prodImages() {
   return src(options.paths.src.img + "/**/*")
-    .pipe(
-      webP({
-        quality: 70,
-      })
-    )
-    .pipe(dest(options.paths.build.img))
-    .pipe(src(options.paths.src.img + "/**/*"))
     .pipe(imagemin())
     .pipe(dest(options.paths.build.img));
 }
