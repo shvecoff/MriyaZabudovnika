@@ -27,14 +27,6 @@ body {
 section:not(:first-child) {
   padding-top: 128px; }
 
-.header__fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 999;
-  background-color: #1C1C1C; }
-
 .container {
   max-width: 1320px;
   margin: 0 auto; }
@@ -44,6 +36,15 @@ section:not(:first-child) {
   .header .container {
     display: flex;
     align-items: center; }
+
+.header__fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: rgba(28, 28, 28, 0.8);
+  backdrop-filter: blur(15px); }
 
 .header__logo {
   margin-right: auto; }
