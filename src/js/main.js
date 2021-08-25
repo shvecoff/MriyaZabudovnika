@@ -14,3 +14,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+const header = document.querySelector("header");
+let windowScroll = window;
+document.addEventListener("scroll", function () {
+  if (windowScroll.pageYOffset > header.clientHeight) {
+    header.classList.add("header__fixed");
+  } else if (windowScroll.pageYOffset < header.clientHeight) {
+    header.classList.remove("header__fixed");
+  }
+});
