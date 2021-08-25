@@ -136,14 +136,13 @@ section:not(:first-child) {
     outline: none;
     max-width: 318px;
     background: #F2F2F2;
-    border: 1px solid #C4C4C4;
+    border: 2px solid transparent;
     border-radius: 8px;
     padding: 16px 127px 16px 16px;
     margin-right: auto;
-    transition: all 0.3s linear;
 
     &:focus {
-        border: 1px solid #10A9B7;
+        border: 2px solid #10A9B7;
     }
 }
 
@@ -152,6 +151,7 @@ section:not(:first-child) {
     padding: 15px 39px;
     border-radius: 12px;
     transition: all 0.3s linear;
+    cursor: pointer;
 
     &:hover {
         background: #44C8D4 url(../img/arrow.svg) center center no-repeat;
