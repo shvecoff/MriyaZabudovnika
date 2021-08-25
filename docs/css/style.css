@@ -737,7 +737,7 @@ section:not(:first-child) {
 
 .hero__button {
   background: #10A9B7 url(../img/arrow.svg) center center no-repeat;
-  padding: 15px 39px;
+  padding: 18px 39px;
   border-radius: 12px;
   transition: all 0.3s linear;
   cursor: pointer; }
