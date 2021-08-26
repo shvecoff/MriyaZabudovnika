@@ -43,7 +43,7 @@ body {
     overflow-x: hidden;
 }
 
-section:not(:first-child) {
+section {
     padding-top: 128px;
 }
 
@@ -54,6 +54,11 @@ section:not(:first-child) {
 
 .header {
     padding: 18px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
 
     .container {
         display: flex;
@@ -62,11 +67,6 @@ section:not(:first-child) {
 }
 
 .header__fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 999;
     background: rgba(28, 28, 28, 0.8);
     backdrop-filter: blur(15px);
 }
@@ -233,10 +233,24 @@ section:not(:first-child) {
 }
 
 .tab__hover {
-    height: 50%;
+    position: relative;
+    height: 70%;
     width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
     z-index: 1;
+
+    h3 {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 29px;
+        color: #FFFFFF;
+    }
 }
+
 
 .remove__after {
     &:after {

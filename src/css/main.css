@@ -24,7 +24,7 @@ body {
   background: url(../img/bg.jpg) top center/100% no-repeat;
   overflow-x: hidden; }
 
-section:not(:first-child) {
+section {
   padding-top: 128px; }
 
 .container {
@@ -32,17 +32,17 @@ section:not(:first-child) {
   margin: 0 auto; }
 
 .header {
-  padding: 18px 0; }
+  padding: 18px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999; }
   .header .container {
     display: flex;
     align-items: center; }
 
 .header__fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 999;
   background: rgba(28, 28, 28, 0.8);
   backdrop-filter: blur(15px); }
 
@@ -173,9 +173,20 @@ section:not(:first-child) {
   background: url(../img/heroTab/tab4.jpg) right center/cover no-repeat; }
 
 .tab__hover {
-  height: 50%;
+  position: relative;
+  height: 70%;
   width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
   z-index: 1; }
+  .tab__hover h3 {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF; }
 
 .remove__after:after {
   opacity: 0; }

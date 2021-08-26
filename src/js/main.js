@@ -24,3 +24,14 @@ document.addEventListener("scroll", function () {
     header.classList.remove("header__fixed");
   }
 });
+new WOW().init();
+
+const catalogItem = document.querySelectorAll(".catalog__flex");
+for (let i = 0; i < catalogItem.length; i++) {
+  catalogItem[i].classList.add("wow", "animate__animated");
+  if (i % 2 === 0) {
+    catalogItem[i].classList.add("animate__fadeInRight");
+  } else if (i % 2 !== 0) {
+    catalogItem[i].classList.add("animate__fadeInLeft");
+  }
+}
