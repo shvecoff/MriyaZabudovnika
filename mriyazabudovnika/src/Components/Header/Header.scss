@@ -1,0 +1,59 @@
+.header {
+    padding: 18px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+}
+
+.header__fixed {
+    background: rgba(28, 28, 28, 0.8);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+}
+
+.header__logo {
+    margin-right: auto;
+}
+
+.menu__list {
+    display: flex;
+    align-items: center;
+}
+
+.menu__item:not(:last-child) {
+    margin-right: 64px;
+}
+
+.menu__link {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #F2F2F2;
+    transition: all 0.3s linear;
+}
+
+.menu__link:hover {
+    color: #10A9B7;
+}
+
+.header__phone {
+    margin-left: 128px;
+}
+
+.phone__number {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #10A9B7;
+}
