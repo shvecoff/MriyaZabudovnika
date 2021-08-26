@@ -139,15 +139,41 @@ section {
   color: #9A9A9A; }
 
 .hero__right {
-  display: flex; }
+  display: flex;
+  width: 100%;
+  margin-left: 25px; }
 
 .right__tab {
-  width: 200px;
+  flex: 0 1 200px;
   height: 778px;
   position: relative;
   display: flex;
   align-items: flex-end;
-  transition: all 0.4s linear; }
+  transition: flex 0.4s linear;
+  position: relative; }
+  .right__tab:hover {
+    flex: 0 0 500px; }
+    .right__tab:hover:after {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 45%, black 100%); }
+    .right__tab:hover .tab__content {
+      width: 90%;
+      transform: none;
+      left: 25px;
+      top: auto;
+      bottom: 33px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .right__tab:hover .tab__content .tab__detail {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+        .right__tab:hover .tab__content .tab__detail p {
+          animation: textView 0.5s linear; }
+      .right__tab:hover .tab__content .catalog__link {
+        opacity: 1; }
+      .right__tab:hover .tab__content span {
+        transform: none; }
   .right__tab:after {
     content: "";
     width: 100%;
@@ -155,10 +181,33 @@ section {
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(180deg, rgba(41, 43, 37, 0) -57.39%, rgba(37, 40, 43, 0.48) 4.09%, #1C1C1C 100%);
-    transition: all 0.4s linear; }
+    background: linear-gradient(180deg, rgba(41, 43, 37, 0) -57.39%, rgba(37, 40, 43, 0.48) 4.09%, #1C1C1C 100%); }
   .right__tab:not(:last-child) {
     margin-right: 24px; }
+
+.tab__content {
+  position: absolute;
+  top: -20%;
+  transform: rotate(-90deg);
+  width: 100vh; }
+  .tab__content .catalog__link {
+    opacity: 0; }
+  .tab__content span {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 44px;
+    color: #F2F2F2;
+    display: inline-block;
+    transform: rotate(90deg); }
+  .tab__content p {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF; }
 
 .right__tab:nth-child(1) {
   background: url(../img/heroTab/tab1.jpg) right center/cover no-repeat; }
@@ -493,3 +542,11 @@ section {
     font-size: 14px;
     line-height: 150%;
     color: #F2F2F2; }
+
+@keyframes textView {
+  0% {
+    font-size: 5px; }
+  50% {
+    font-size: 10px; }
+  100% {
+    font-size: 24px; } }
