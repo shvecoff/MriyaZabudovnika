@@ -288,7 +288,8 @@ section {
   display: flex;
   background: #2C2C2C;
   border-radius: 8px;
-  margin-bottom: 124px; }
+  margin-bottom: 124px;
+  min-width: 0; }
 
 .catalog__flex:nth-child(2n-1) {
   flex-direction: row-reverse;
@@ -303,10 +304,20 @@ section {
 
 .catalog__container {
   max-width: 648px;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
 
-.catalog__slide img {
-  border-radius: 8px 0 0 8px; }
+.catalog__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%; }
+
+.catalog__slide {
+  flex: 0 0 100%; }
+  .catalog__slide img {
+    border-radius: 8px 0 0 8px; }
 
 .catalog__text {
   padding-top: 45px;
@@ -379,6 +390,10 @@ section {
   border-radius: 6px;
   width: 50px;
   height: 50px; }
+
+.catalog-button-disabled {
+  background: #ffffff79 url(../img/arrow.svg) center no-repeat;
+  opacity: 1; }
 
 .partner__wrapper {
   display: flex;
