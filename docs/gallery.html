@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мрія Забудовника</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__logo">
+                <a href="./index.html">
+                    <img src="./img/logo.svg" alt="logo" class="logo">
+                </a>
+            </div>
+            <div class="header__menu">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="./offer.html" class="menu__link">Ми пропонуємо</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./gallery.html" class="menu__link">Галерея</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./contact.html" class="menu__link">Контакти</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Про нас</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__phone">
+                <a href="tel:+380676738289" class="phone__number">+380 67 673 8289</a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="gallery">
+            <div class="container">
+                <h2 class="title">Галерея</h2>
+                <div class="gallery__filter">
+                    <ul>
+                        <li onclick="filterGallery(this)" class="active">Всі</li>
+                        <li onclick="filterGallery(this)" class="window">Вікна</li>
+                        <li onclick="filterGallery(this)">Двері</li>
+                        <li onclick="filterGallery(this)">Вхідні двері</li>
+                        <li onclick="filterGallery(this)">Міжкімнатні двері</li>
+                        <li onclick="filterGallery(this)">Ролети</li>
+                        <li onclick="filterGallery(this)">Секційні ворота</li>
+                    </ul>
+                </div>
+                <div class="gallery__flex">
+                    <div class="gallery__item" data-fillter="3">
+                        <img src="./img/gallery/1.png" alt="">
+                        <div class="gallery__info">
+                            <h4>Металопластикові вироби</h4>
+                            <img src="./img/partner/partner.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <img src="./img/gallery/2.png" alt="">
+                        <div class="gallery__info">
+                            <h4>Металопластикові вироби</h4>
+                            <img src="./img/partner/partner.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <img src="./img/gallery/3.png" alt="">
+                        <div class="gallery__info">
+                            <h4>Металопластикові вироби</h4>
+                            <img src="./img/partner/partner.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <img src="./img/gallery/4.png" alt="">
+                        <div class="gallery__info">
+                            <h4>Металопластикові вироби</h4>
+                            <img src="./img/partner/partner.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <img src="./img/gallery/5.png" alt="">
+                        <div class="gallery__info">
+                            <h4>Металопластикові вироби</h4>
+                            <img src="./img/partner/partner.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <img src="./img/gallery/6.png" alt="">
+                        <div class="gallery__info">
+                            <h4>Металопластикові вироби</h4>
+                            <img src="./img/partner/partner.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <img src="./img/gallery/7.png" alt="">
+                        <div class="gallery__info">
+                            <h4>Металопластикові вироби</h4>
+                            <img src="./img/partner/partner.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="gallery__item">
+                        <img src="./img/gallery/8.png" alt="">
+                        <div class="gallery__info">
+                            <h4>Металопластикові вироби</h4>
+                            <img src="./img/partner/partner.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__column">
+                <div class="footer__logo">
+                    <img src="./img/logo.svg" alt="">
+                </div>
+                <div class="footer__deskription">
+                    <p>Виробництво металопластикових виробів вхідних та міжкімнатних дверей</p>
+                </div>
+            </div>
+            <div class="footer__column">
+                <ul class="footer__menu">
+                    <li><a href="">Каталог</a></li>
+                    <li><a href="">Галерея</a></li>
+                    <li><a href="">Партнери</a></li>
+                    <li><a href="">Про нас</a></li>
+                </ul>
+            </div>
+            <div class="footer__column">
+                <h5>Слідкуйте за нами</h5>
+                <div class="footer__social">
+                    <a href=""><img src="./img/instagram.svg" alt=""></a>
+                    <a href=""><img src="./img/facebook.svg" alt=""></a>
+                </div>
+            </div>
+            <div class="footer__column">
+                <div class="footer__adress">
+                    <p>вулиця Чорновола, 31/1 Хмельницький</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

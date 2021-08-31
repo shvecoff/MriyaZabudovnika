@@ -20,6 +20,12 @@
     .social a:hover {
       @apply text-blue-700; }
 
+* {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px; }
+
 body {
   background: url(../img/bg.jpg) top center/100% no-repeat;
   overflow-x: hidden; }
@@ -57,8 +63,6 @@ section {
   margin-right: 64px; }
 
 .menu__link {
-  font-family: "Inter";
-  font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
@@ -71,8 +75,6 @@ section {
   margin-left: 128px; }
 
 .phone__number {
-  font-family: "Inter";
-  font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
@@ -87,8 +89,6 @@ section {
   padding-top: 196px; }
 
 .hero__title {
-  font-family: "Inter";
-  font-style: normal;
   font-weight: bold;
   font-size: 82px;
   line-height: 99px;
@@ -96,8 +96,6 @@ section {
   margin-bottom: 21px; }
 
 .hero__description {
-  font-family: "Inter";
-  font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 217.5%;
@@ -131,10 +129,6 @@ section {
 
 .hero__form-description {
   margin-top: 24px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
   line-height: 24px;
   color: #9A9A9A; }
 
@@ -193,17 +187,12 @@ section {
   .tab__content .catalog__link {
     opacity: 0; }
   .tab__content span {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: normal;
     font-size: 36px;
     line-height: 44px;
     color: #F2F2F2;
     display: inline-block;
     transform: rotate(90deg); }
   .tab__content h3 {
-    font-family: "Inter";
-    font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 29px;
@@ -230,8 +219,6 @@ section {
   justify-content: center;
   z-index: 1; }
   .tab__hover h3 {
-    font-family: "Inter";
-    font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 29px;
@@ -268,16 +255,11 @@ section {
 .benefits__text {
   max-width: 113px; }
   .benefits__text p {
-    font-family: "Inter";
-    font-style: normal;
     font-weight: bold;
-    font-size: 14px;
     line-height: 17px;
     color: #F2F2F2; }
 
 .title {
-  font-family: "Inter";
-  font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 44px;
@@ -328,8 +310,6 @@ section {
   align-items: center; }
 
 .catalog__title {
-  font-family: "Inter";
-  font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 29px;
@@ -337,9 +317,6 @@ section {
   margin-right: 24px; }
 
 .catalog__link {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: normal;
   font-size: 16px;
   line-height: 19px;
   color: #10A9B7;
@@ -352,9 +329,6 @@ section {
   max-width: 580px; }
 
 .catalog__list {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 200%;
   color: #9E9E9E;
@@ -367,7 +341,7 @@ section {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    top: 50%;
+    top: 18px;
     left: 0;
     transform: translateY(-50%); }
 
@@ -413,9 +387,6 @@ section {
   max-width: 522px; }
 
 .form__description {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: normal;
   font-size: 18px;
   line-height: 24px;
   color: #9A9A9A; }
@@ -442,9 +413,6 @@ section {
   border: 1px solid #C4C4C4;
   border-radius: 8px; }
   .form__main-input::placeholder {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 500;
     font-size: 16px;
     line-height: 24px;
     color: #C4C4C4; }
@@ -477,8 +445,6 @@ section {
 
 .news__info h4 {
   display: inline-block;
-  font-family: "Inter";
-  font-style: normal;
   font-weight: bold;
   font-size: 24px;
   line-height: 29px;
@@ -489,8 +455,6 @@ section {
 .news__more {
   display: inline-block;
   margin-top: 15px;
-  font-family: "Inter";
-  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 24px;
@@ -516,10 +480,6 @@ section {
   max-width: 312px;
   margin-top: 48px; }
   .footer__deskription p {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
     line-height: 150%;
     color: #F2F2F2; }
 
@@ -527,18 +487,11 @@ section {
   margin-bottom: 32px; }
 
 .footer__menu li a {
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
   line-height: 17px;
   color: #F2F2F2; }
 
 .footer__column h5 {
-  font-family: "Inter";
-  font-style: normal;
   font-weight: bold;
-  font-size: 14px;
   line-height: 17px;
   color: #F2F2F2; }
 
@@ -551,10 +504,6 @@ section {
 .footer__adress {
   max-width: 198px; }
   .footer__adress p {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
     line-height: 150%;
     color: #F2F2F2; }
 
@@ -566,13 +515,13 @@ section {
   100% {
     font-size: 24px; } }
 
-.service__flex {
+.offer__flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap; }
 
-.service__block {
+.offer__block {
   max-width: 648px;
   height: 700px;
   background: #2C2C2C;
@@ -581,37 +530,32 @@ section {
   display: flex;
   flex-direction: column; }
 
-.service__img {
+.offer__img {
   border-radius: 8px 8px 0 0; }
-  .service__img img {
+  .offer__img img {
     border-radius: 8px 8px 0 0; }
 
-.service__info {
+.offer__info {
   padding: 48px 24px 31px 24px;
   margin-bottom: auto; }
-  .service__info .tab__detail {
+  .offer__info .tab__detail {
     display: flex;
     align-items: center;
     justify-content: space-between; }
-    .service__info .tab__detail h3 {
-      font-family: "Inter";
-      font-style: normal;
+    .offer__info .tab__detail h3 {
       font-weight: bold;
       font-size: 24px;
       line-height: 29px;
       color: #F2F2F2; }
-  .service__info .service__description {
+  .offer__info .offer__description {
     max-width: 536px;
     margin: 24px 0; }
-    .service__info .service__description p {
-      font-family: "Inter";
-      font-style: normal;
-      font-weight: normal;
+    .offer__info .offer__description p {
       font-size: 18px;
       line-height: 150%;
       color: #9E9E9E; }
 
-.service__partner {
+.offer__partner {
   padding: 0 24px 30px 24px; }
 
 .partner__img {
@@ -621,3 +565,192 @@ section {
   .partner__img img {
     max-width: 114px;
     margin-right: 24px; }
+
+.contact {
+  padding-bottom: 32px; }
+
+.contact__flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; }
+  .contact__flex h3 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F2F2F2; }
+
+.contact__left {
+  max-width: 536px;
+  background: #2C2C2C;
+  border-radius: 8px;
+  padding-bottom: 25px; }
+
+.contact__right {
+  max-width: 760px; }
+
+.map__title {
+  padding: 24px 0 24px 32px;
+  max-width: 230px; }
+  .map__title p {
+    font-size: 18px;
+    line-height: 150%;
+    color: #9E9E9E;
+    padding-top: 18px; }
+
+.contact__work {
+  display: flex;
+  justify-content: space-between;
+  padding: 32px; }
+  .contact__work h4 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF; }
+  .contact__work ul {
+    padding-top: 24px; }
+    .contact__work ul li {
+      font-size: 18px;
+      line-height: 22px;
+      color: #9E9E9E; }
+
+.left__top {
+  margin-bottom: 24px;
+  background: #2C2C2C;
+  border-radius: 8px; }
+
+.top__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 24px 135px 0 32px; }
+  .top__info ul {
+    margin-bottom: 53px; }
+    .top__info ul li {
+      margin-top: 18px;
+      font-size: 18px;
+      line-height: 22px;
+      color: #9E9E9E; }
+
+.left__bottom {
+  background: #2C2C2C;
+  border-radius: 8px;
+  padding: 0 24px; }
+
+.contact__form {
+  padding-top: 24px;
+  padding-bottom: 24px; }
+  .contact__form form {
+    margin-top: 33px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .contact__form form .form__top {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 24px; }
+    .contact__form form input {
+      outline: none;
+      color: #fff;
+      padding: 16px 0 16px 16px;
+      background: #414141;
+      border-radius: 8px;
+      width: 336px; }
+    .contact__form form textarea {
+      width: 100%;
+      background: #414141;
+      border-radius: 8px;
+      padding: 16px 0 16px 16px;
+      outline: none;
+      color: #fff;
+      height: 158px; }
+    .contact__form form button {
+      margin-top: 32px;
+      padding: 15px 115px;
+      font-size: 16px;
+      line-height: 24px;
+      color: #FFFFFF;
+      background: #10A9B7;
+      border-radius: 12px;
+      max-width: 312px; }
+
+.gallery__filter ul {
+  display: flex; }
+  .gallery__filter ul li {
+    cursor: pointer;
+    line-height: 17px;
+    color: #F2F2F2;
+    margin-right: 12px;
+    padding: 6px 12px;
+    border: 1px solid #2A2A2A;
+    border-radius: 125px; }
+    .gallery__filter ul li.active {
+      background-color: #10A9B7; }
+
+.gallery__flex {
+  margin-top: 17px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start; }
+
+.gallery__item {
+  cursor: pointer;
+  flex: 0 0 424px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  position: relative; }
+  .gallery__item:not(:nth-child(3n)) {
+    margin-right: 24px; }
+  .gallery__item:hover .gallery__info {
+    background: rgba(43, 43, 43, 0.8);
+    z-index: 1; }
+
+.gallery__info {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1; }
+  .gallery__info h4 {
+    color: #F2F2F2;
+    font-size: 24px;
+    line-height: 29px; }
+  .gallery__info img {
+    margin-top: 46px;
+    max-width: 125px; }
+
+.service__flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 100px; }
+
+.service__item {
+  max-width: 424px;
+  background: #2C2C2C;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 32px;
+  margin-bottom: 24px; }
+
+.service__info {
+  max-width: 372px; }
+  .service__info h3 {
+    font-size: 24px;
+    line-height: 29px;
+    color: #F2F2F2;
+    margin-top: 56px;
+    margin-bottom: 18px; }
+  .service__info p {
+    font-size: 18px;
+    line-height: 150%;
+    color: #9E9E9E; }

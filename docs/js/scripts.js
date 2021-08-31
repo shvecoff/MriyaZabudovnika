@@ -610,3 +610,13 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 });
+
+function filterGallery(btn) {
+  const btnActive = document.querySelectorAll(".gallery__filter > ul > li");
+  const galleryItems = document.querySelectorAll(".gallery__item");
+  for (let i = 0; i < btnActive.length; i++) {
+    btnActive[i].classList.remove("active");
+    btn.classList.add("active");
+  }
+  for (let j = 0; j < galleryItems.length; j++) {}
+}
