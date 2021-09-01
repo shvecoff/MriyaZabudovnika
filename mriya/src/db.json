@@ -1,0 +1,74 @@
+
+    {
+        "benefits":[
+            {
+                "img": "./assets/img/calendar.svg",
+                "alt":"calendar",
+                "description":"20 років на ринку"},
+            {
+                "img": "./assets/img/settings.svg",
+                "alt":"settings",
+                "description":"Cучасне виробництво"
+            },
+            {
+                "img": "./assets/img/shoppingBag.svg",
+                "alt":"shoppingBag",
+                "description":"Великий ассортимент"
+            },
+            {
+                "img": "./assets/img/smile.svg",
+                "alt":"smile",
+                "description":"Індивідуальний підхід"
+            },
+            {
+                "img": "./assets/img/percent.svg",
+                "alt":"percent",
+                "description":"Розстрочка платежу"
+            },
+            {
+                "img": "./assets/img/award.svg",
+                "alt":"award",
+                "description":"Гарантія якості"
+            }
+        ],
+        "homeTab":[
+            {
+                "link":"",
+                "description":"Металопластикові вироби",
+                "number":"1"
+            },
+            {
+                "link":"",
+                "description":"Вхідні , міжкімнаті двері",
+                "number":"2"
+            },
+            {
+                "link":"",
+                "description":"Секційні ворота",
+                "number":"3"
+            },
+            {
+                "link":"",
+                "description":"Послуги",
+                "number":"4"
+            }
+        ],
+        "catalog":[
+            {
+                "link":"",
+                "name":"Металопластикові вироби"
+            },
+            {
+                "link":"",
+                "name":"Вхідні , міжкімнаті двері"
+            },
+            {
+                "link":"",
+                "name":"Секційні ворота"
+            },
+            {
+                "link":"",
+                "name":"Послуги"
+            }
+        ]
+    }
