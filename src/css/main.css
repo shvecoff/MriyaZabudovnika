@@ -49,6 +49,7 @@ section {
     align-items: center; }
 
 .header__fixed {
+  transition: all 1s ease;
   background: rgba(28, 28, 28, 0.8);
   backdrop-filter: blur(15px); }
 
