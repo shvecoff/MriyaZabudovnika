@@ -596,7 +596,6 @@ document.addEventListener("DOMContentLoaded", function () {
       catalogItem[i].classList.add("animate__fadeInLeft");
     }
   }
-
   const swiper = new Swiper(".catalog__container", {
     wrapperClass: "catalog__wrapper",
     slideClass: "catalog__slide",
@@ -607,15 +606,34 @@ document.addEventListener("DOMContentLoaded", function () {
       prevEl: ".catalog-button-prev",
       disabledClass: "catalog-button-disabled",
     },
+    lazy: {
+      loadPrevNext: true,
+    },
   });
+
+  const partnerSwiper = new Swiper(".partner__containe", {
+    wrapperClass: "partner__wrapper",
+    slideClass: "partner__slide",
+    slidesPerView: "auto",
+    direction: "horizontal",
+    loop: true,
+    autoplay: {
+      delay: 5000,
+    },
+    lazy: {
+      loadPrevNext: true,
+    },
+  });
+
+  function filterGallery(btn) {
+    const btnActive = document.querySelectorAll(".gallery__filter > ul > li");
+    const galleryItems = document.querySelectorAll(".gallery__item");
+    for (let i = 0; i < btnActive.length; i++) {
+      btnActive[i].classList.remove("active");
+      btn.classList.add("active");
+    }
+    for (let j = 0; j < galleryItems.length; j++) {}
+  }
 });
 
-function filterGallery(btn) {
-  const btnActive = document.querySelectorAll(".gallery__filter > ul > li");
-  const galleryItems = document.querySelectorAll(".gallery__item");
-  for (let i = 0; i < btnActive.length; i++) {
-    btnActive[i].classList.remove("active");
-    btn.classList.add("active");
-  }
-  for (let j = 0; j < galleryItems.length; j++) {}
-}
+

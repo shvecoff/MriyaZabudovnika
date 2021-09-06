@@ -31,6 +31,102 @@
                 "description":"Гарантія якості"
             }
         ],
+        "ofer":[
+            {
+                "img":"./assets/img/ofer/service1.jpg",
+                "alt":"Металопластикові вироби",
+                "title":"Металопластикові вироби",
+                "link":"",
+                "description":"Вікна, двері, конструкції для балконів та лоджій, металопластикові труби, водостічні системи від виробника",
+                "partner":[
+                    {
+                        "img":"./assets/img/partner/wds.svg",
+                        "alt":"wds"
+                    }
+                ]
+            },
+            {
+                "img":"./assets/img/ofer/service2.jpg",
+                "alt":"Вхідні , міжкімнаті двері",
+                "title":"Вхідні , міжкімнаті двері",
+                "link":"",
+                "description":"Металеві двері, плита мдф, ковка і скло",
+                "partner":[
+                    {
+                        "img":"./assets/img/partner/Rodos.svg",
+                        "alt":"Rodos"
+                    },
+                    {
+                        "img":"./assets/img/partner/Stray.svg",
+                        "alt":"Stray"
+                    },
+                    {
+                        "img":"./assets/img/partner/Terminus.svg",
+                        "alt":"Terminus"
+                    },
+                    {
+                        "img":"./assets/img/partner/Brama.svg",
+                        "alt":"Brama"
+                    },
+                    {
+                        "img":"./assets/img/partner/Leadors.svg",
+                        "alt":"Leadors"
+                    }
+                ]
+            },
+            {
+                "img":"./assets/img/ofer/service3.jpg",
+                "alt":"Секційні ворота",
+                "title":"Секційні ворота",
+                "link":"",
+                "description":"Секційні ворота,ролетні ворота, промислові ворота, панорамні ворота, в'їзні ворота, відкатні ворота",
+                "partner":[
+                    {
+                        "img":"./assets/img/partner/Alutex.svg",
+                        "alt":"Alutex"
+                    }
+                ]
+            },
+            {
+                "img":"./assets/img/ofer/service4.jpg",
+                "alt":"Послуги",
+                "title":"Послуги",
+                "link":"/service",
+                "description":"Заміри, Прорахунок, Доставка, Монтаж, Гарантійне обслоговування, Надання проектної документації",
+                "partner":[
+                    {
+                        "img":"",
+                        "alt":""
+                    }
+                ]
+            }
+        ],
+        "partners":[
+            {
+                "img":"./assets/img/partner/wds.svg",
+                "alt":"WDS"
+            },
+            {
+                "img":"./assets/img/partner/stray.svg",
+                "alt":"stray"
+            },
+            {
+                "img":"./assets/img/partner/Alutex.svg",
+                "alt":"Alutex"
+            },
+            {
+                "img":"./assets/img/partner/Brama.svg",
+                "alt":"Brama"
+            },
+            {
+                "img":"./assets/img/partner/Rodos.svg",
+                "alt":"Rodos"
+            },
+            {
+                "img":"./assets/img/partner/Terminus.svg",
+                "alt":"Terminus"
+            }
+        ],
         "homeTab":[
             {
                 "link":"",
@@ -48,7 +144,7 @@
                 "number":"3"
             },
             {
-                "link":"",
+                "link":"/service",
                 "description":"Послуги",
                 "number":"4"
             }
@@ -154,7 +250,7 @@
                 ]
             },
             {
-                "link":"",
+                "link":"/service",
                 "name":"Послуги",
                 "slide":[
                     {
@@ -190,3 +286,6 @@
             }
         ]
     }
+
+
+    

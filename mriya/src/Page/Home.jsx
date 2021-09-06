@@ -3,6 +3,8 @@ import Benefits from "../Components/Benefits";
 import HeroTab from "../Components/HeroTab";
 import HomeCatalog from "../Components/HomeCatalog";
 import MainForm from "../Components/MainForm";
+import Partners from '../Components/Partners'
+
 export default function Home({ DB }) {
   return (
     <React.Fragment>
@@ -37,30 +39,7 @@ export default function Home({ DB }) {
         </div>
       </section>
       <HomeCatalog DB={DB} />
-      <section className="partner">
-        <div className="container">
-          <h2 className="title">Партнери</h2>
-          <div className="partner__containe">
-            <div className="partner__wrapper">
-              <div className="partner__slide">
-                <img src="./img/partner/partner.svg" alt="" />
-              </div>
-              <div className="partner__slide">
-                <img src="./img/partner/partner1.svg" alt="" />
-              </div>
-              <div className="partner__slide">
-                <img src="./img/partner/partner.svg" alt="" />
-              </div>
-              <div className="partner__slide">
-                <img src="./img/partner/partner1.svg" alt="" />
-              </div>
-              <div className="partner__slide">
-                <img src="./img/partner/partner.svg" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Partners DB={DB}/>
       <MainForm />
       <section className="portfolio">
         <div className="container">

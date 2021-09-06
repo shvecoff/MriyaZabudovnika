@@ -6,6 +6,10 @@ import "animate.css";
 import Footer from "./Components/Footer";
 import Home from "./Page/Home.jsx";
 import Offer from "./Page/Offer.jsx";
+import Service from './Page/Service.jsx'
+import Contact from './Page/Contact.jsx'
+
+ 
 
 function App() {
   return (
@@ -16,7 +20,13 @@ function App() {
           <Home DB={DB} />
         </Route>
         <Route path="/offer">
-          <Offer />
+          <Offer  DB={DB}/>
+        </Route>
+        <Route path="/service">
+          <Service/>
+        </Route>
+        <Route path="/contact">
+          <Contact/>
         </Route>
       </main>
       <Footer />

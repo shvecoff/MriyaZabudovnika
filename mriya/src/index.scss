@@ -761,7 +761,9 @@ section {
   font-size: 18px;
   line-height: 22px;
   color: #F2F2F2;
-  transition: all 0.3s linear;
+  transition: all 0.3s linear; 
+
+
 }
 
 .menu__link:hover {
@@ -917,7 +919,7 @@ section {
   position: absolute;
   top: -20%;
   transform: rotate(-90deg);
-  width: 100vh;
+  width: 80vh;
 }
 
 .tab__content .catalog__link {
@@ -1147,12 +1149,16 @@ section {
   background: #ffffff79 url(./assets/img/arrow.svg) center no-repeat;
   opacity: 1;
 }
-
+.partner__containe{
+  overflow-x: hidden;
+}
 .partner__wrapper {
   display: flex;
   justify-content: space-between;
 }
-
+.partner__slide{
+  flex: 0 0 25%;
+}
 .main__form {
   margin-top: 124px;
   padding-bottom: 64px;
@@ -1417,6 +1423,8 @@ section {
 
 .offer__partner {
   padding: 0 24px 30px 24px;
+  display: flex;
+  align-items: center;
 }
 
 .partner__img {
@@ -1462,7 +1470,11 @@ section {
   padding: 24px 0 24px 32px;
   max-width: 230px;
 }
-
+.map__geolocation{
+  position: relative;
+  width: 536px;
+  height: 500px;
+}
 .map__title p {
   font-size: 18px;
   line-height: 150%;
@@ -1510,13 +1522,14 @@ section {
   margin-bottom: 53px;
 }
 
-.top__info ul li {
-  margin-top: 18px;
+.top__info ul li a {
   font-size: 18px;
   line-height: 22px;
   color: #9E9E9E;
 }
-
+.top__info ul li {
+  margin-top: 18px;
+}
 .left__bottom {
   background: #2C2C2C;
   border-radius: 8px;
@@ -1558,7 +1571,7 @@ section {
   padding: 16px 0 16px 16px;
   outline: none;
   color: #fff;
-  height: 158px;
+  height: 240px;
 }
 
 .contact__form form button {
