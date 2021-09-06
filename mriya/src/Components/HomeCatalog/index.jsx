@@ -9,15 +9,11 @@ export default function HomeCatalog({ DB }) {
           <div className="catalog__flex" key={index}>
             <div className="catalog__container">
               <div className="catalog__wrapper">
-                <div className="catalog__slide">
-                  <img src="./assets/img/Catalog/catalog.jpg" alt="" />
-                </div>
-                <div className="catalog__slide">
-                  <img src="./img/Catalog/catalog.jpg" alt="" />
-                </div>
-                <div className="catalog__slide">
-                  <img src="./img/Catalog/catalog.jpg" alt="" />
-                </div>
+                {catalog.slide.map((slide, index) => (
+                  <div className="catalog__slide" key={index}>
+                    <img src={slide.img} alt="" />
+                  </div>
+                ))}
               </div>
               <div className="catalog__navigation">
                 <div className="catalog-button-prev"></div>
@@ -32,7 +28,11 @@ export default function HomeCatalog({ DB }) {
                 </a>
               </div>
               <ul className="catalog__bottom">
-                <li className="catalog__list"></li>
+                {catalog.ul.map((li, index) => (
+                  <li className="catalog__list" key={index}>
+                    {li.li}
+                  </li>
+                ))}
               </ul>
             </div>
           </div>

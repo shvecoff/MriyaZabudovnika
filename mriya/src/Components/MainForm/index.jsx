@@ -28,9 +28,15 @@ export default function MainForm() {
               />
               <select name="select" className="form__main-input">
                 <option>Вас цікавить..</option>
-                <option></option>
-                <option></option>
-                <option></option>
+                <option value="Металопластикові вироби">
+                  Металопластикові вироби
+                </option>
+                <option value="Міжкімнатні та вхідні двері">
+                  Міжкімнатні та вхідні двері
+                </option>
+                <option value="Секційні ворота">Секційні ворота</option>
+                <option value="Замір">Замір</option>
+                <option value="Монтаж">Монтаж</option>
               </select>
               <input
                 type="submit"
