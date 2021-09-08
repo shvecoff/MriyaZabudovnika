@@ -31,6 +31,64 @@
                 "description":"Гарантія якості"
             }
         ],
+        "gallery":[
+            {
+                "img":"./assets/img/gallery/1.png",
+                "alt":"Металопластикові вироби",
+                "title":"Металопластикові вироби",
+                "partner":"./assets/img/partner/wds.svg",
+                "category":"Вікна"
+            },
+            {
+                "img":"./assets/img/gallery/2.png",
+                "alt":"Металопластикові вироби",
+                "title":"Металопластикові вироби",
+                "partner":"./assets/img/partner/wds.svg",
+                "category":"Вікна"
+            },
+            {
+                "img":"./assets/img/gallery/3.png",
+                "alt":"Металопластикові вироби",
+                "title":"Металопластикові вироби",
+                "partner":"./assets/img/partner/wds.svg",
+                "category":"Двері"
+            },
+            {
+                "img":"./assets/img/gallery/4.png",
+                "alt":"Металопластикові вироби",
+                "title":"Металопластикові вироби",
+                "partner":"./assets/img/partner/wds.svg",
+                "category":"Ролети"
+            },
+            {
+                "img":"./assets/img/gallery/5.png",
+                "alt":"Металопластикові вироби",
+                "title":"Металопластикові вироби",
+                "partner":"./assets/img/partner/wds.svg",
+                "category":"Ролети"
+            },
+            {
+                "img":"./assets/img/gallery/6.png",
+                "alt":"Металопластикові вироби",
+                "title":"Металопластикові вироби",
+                "partner":"./assets/img/partner/wds.svg",
+                "category":"Міжкімнатні двері"
+            },
+            {
+                "img":"./assets/img/gallery/7.png",
+                "alt":"Металопластикові вироби",
+                "title":"Металопластикові вироби",
+                "partner":"./assets/img/partner/wds.svg",
+                "category":"Вхідні двері"
+            },
+            {
+                "img":"./assets/img/gallery/8.png",
+                "alt":"Металопластикові вироби",
+                "title":"Металопластикові вироби",
+                "partner":"./assets/img/partner/wds.svg",
+                "category":"Секційні ворота"
+            }
+        ],
         "ofer":[
             {
                 "img":"./assets/img/ofer/service1.jpg",

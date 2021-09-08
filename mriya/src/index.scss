@@ -1589,7 +1589,8 @@ section {
   display: flex;
 }
 
-.gallery__filter ul li {
+.gallery__filter ul button {
+  outline: none;
   cursor: pointer;
   line-height: 17px;
   color: #F2F2F2;

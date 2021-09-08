@@ -8,6 +8,7 @@ import Home from "./Page/Home.jsx";
 import Offer from "./Page/Offer.jsx";
 import Service from './Page/Service.jsx'
 import Contact from './Page/Contact.jsx'
+import Gallery from "./Page/Gallery.jsx";
 
  
 
@@ -24,6 +25,9 @@ function App() {
         </Route>
         <Route path="/service">
           <Service/>
+        </Route>
+        <Route path="/gallery">
+          <Gallery DB={DB}/>
         </Route>
         <Route path="/contact">
           <Contact/>
