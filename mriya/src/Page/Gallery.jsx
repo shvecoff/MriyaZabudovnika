@@ -1,45 +1,68 @@
-import React from 'react'
-import MainForm from '../Components/MainForm'
+import React from "react";
+import ReactDOM from "react-dom";
+import MainForm from "../Components/MainForm";
 
-const fillterBtn = ["Вікна","Двері", "Вхідні двері","Міжкімнатні двері", "Ролети", "Секційні ворота"]
+const fillterBtn = [
+  "Вікна",
+  "Двері",
+  "Вхідні двері",
+  "Міжкімнатні двері",
+  "Ролети",
+  "Секційні ворота",
+];
 
-export default function Gallery({DB}){ 
-    const [filter, setFilter] = React.useState(DB.gallery);
-    const filterItem = (filterItem) => {
-        const updatedItems = DB.gallery.filter((el)=>{
-            return el.category === filterItem
-        })
-        setFilter(updatedItems)
-    }
-    return(
-        <React.Fragment>
-            <section className="gallery">
-                <div className="container">
-                    <h2 className="title">Галерея</h2>
-                    <div className="gallery__filter">
-                        <ul>
-                            <button onClick = {()=>setFilter(DB.gallery)}>Всі</button>
-                           {fillterBtn.map((btn,index)=>
-                                <button onClick = {()=>filterItem(btn)} key={index}>{btn}</button>
-                            )}
-                        </ul>
-                    </div>
-                    <div className="gallery__flex">
-                        {
-                            filter.map((item,index)=>
-                                <div className="gallery__item" key={index}>
-                                    <img src={item.img} alt={item.alt}/>
-                                    <div className="gallery__info">
-                                        <h4>{item.title}</h4>
-                                        <img src={item.partner} alt=""/>
-                                    </div>
-                                </div>
-                            )
-                        }
-                    </div>
+export default function Gallery({ DB }) {
+  const [filter, setFilter] = React.useState(DB.gallery);
+  const filterItem = (filterItem) => {
+    const updatedItems = DB.gallery.filter((el) => {
+      return el.category === filterItem;
+    });
+    setFilter(updatedItems);
+  };
+  const openFullGallery = (el) => {
+    setFullGallery(!fullGallery);
+    ReactDOM.render(<img src={el} />, document.getElementById("fullGallery"));
+  };
+  const [fullGallery, setFullGallery] = React.useState(false);
+  return (
+    <React.Fragment>
+      <section className="gallery">
+        <div className="container">
+          <h2 className="title">Галерея</h2>
+          <div className="gallery__filter">
+            <ul>
+              <button onClick={() => setFilter(DB.gallery)}>Всі</button>
+              {fillterBtn.map((btn, index) => (
+                <button onClick={() => filterItem(btn)} key={index}>
+                  {btn}
+                </button>
+              ))}
+            </ul>
+          </div>
+          <div className="gallery__flex">
+            {filter.map((item, index) => (
+              <div
+                className="gallery__item"
+                key={index}
+                onClick={() => openFullGallery(item.img)}
+              >
+                <img src={item.img} alt={item.alt} />
+                <div className="gallery__info">
+                  <h4>{item.title}</h4>
+                  <img src={item.partner} alt="" />
                 </div>
-            </section>
-            <MainForm/>
-        </React.Fragment>
-    );
+              </div>
+            ))}
+          </div>
+        </div>
+        <div
+          id="fullGallery"
+          className={fullGallery && "fullGallery"}
+          onClick={() => openFullGallery(null)}
+        ></div>
+      </section>
+
+      <MainForm />
+    </React.Fragment>
+  );
 }
