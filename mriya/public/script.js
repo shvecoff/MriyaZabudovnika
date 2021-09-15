@@ -574,8 +574,8 @@
 }.call(this));
 
 //main.js file
-document.addEventListener("DOMContentLoaded", function () {
-  new WOW().init();
+  document.addEventListener("DOMContentLoaded",function(){
+    new WOW().init();
 
   const header = document.querySelector("header");
   let windowScroll = window;
@@ -596,34 +596,6 @@ document.addEventListener("DOMContentLoaded", function () {
       catalogItem[i].classList.add("animate__fadeInLeft");
     }
   }
-  const swiper = new Swiper(".catalog__container", {
-    wrapperClass: "catalog__wrapper",
-    slideClass: "catalog__slide",
-    slidesPerView: "auto",
-    direction: "horizontal",
-    navigation: {
-      nextEl: ".catalog-button-next",
-      prevEl: ".catalog-button-prev",
-      disabledClass: "catalog-button-disabled",
-    },
-    lazy: {
-      loadPrevNext: true,
-    },
-  });
-
-  const partnerSwiper = new Swiper(".partner__containe", {
-    wrapperClass: "partner__wrapper",
-    slideClass: "partner__slide",
-    slidesPerView: "auto",
-    direction: "horizontal",
-    loop: true,
-    autoplay: {
-      delay: 5000,
-    },
-    lazy: {
-      loadPrevNext: true,
-    },
-  });
-});
+})
 
 

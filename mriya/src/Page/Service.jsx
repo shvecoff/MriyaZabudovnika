@@ -1,7 +1,6 @@
 import React from 'react'
 import MainForm from '../Components/MainForm'
 
-
 export default function Service(){
     return (
         <React.Fragment>
@@ -54,6 +53,7 @@ export default function Service(){
                     </div>
                 </div>
             </section>
+           
             <MainForm/>
         </React.Fragment>
     )

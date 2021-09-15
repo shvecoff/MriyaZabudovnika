@@ -1,11 +1,12 @@
 import React from "react";
+
 import Benefits from "../Components/Benefits";
 import HeroTab from "../Components/HeroTab";
 import HomeCatalog from "../Components/HomeCatalog";
 import MainForm from "../Components/MainForm";
 import Partners from '../Components/Partners'
 
-export default function Home({ DB }) {
+export default function Home({ DB,testApi }) {
   return (
     <React.Fragment>
       <section className="hero">
@@ -18,7 +19,7 @@ export default function Home({ DB }) {
                 дверей
               </p>
               <div className="hero__form">
-                <form action="">
+                <form onSubmit={testApi}>
                   <input
                     type="tel"
                     className="hero__input"
@@ -46,13 +47,13 @@ export default function Home({ DB }) {
           <h2 className="title">Наші роботи</h2>
           <div className="portfolio__flex">
             <div className="portfolio__item">
-              <img src="./img/portfolio1.jpg" alt="" />
+              <img src="./assets/img/portfolio1.jpg" alt="" />
             </div>
             <div className="portfolio__item">
-              <img src="./img/portfolio2.jpg" alt="" />
+              <img src="./assets/img/portfolio2.jpg" alt="" />
             </div>
             <div className="portfolio__item">
-              <img src="./img/portfolio3.jpg" alt="" />
+              <img src="./assets/img/portfolio3.jpg" alt="" />
             </div>
           </div>
         </div>
@@ -68,7 +69,7 @@ export default function Home({ DB }) {
               <div className="news__info">
                 <span>16.04.2021</span>
                 <h4>Нове обладнення</h4>
-                <a href="" className="news__more">
+                <a href="https://www.google.com.ua/" className="news__more">
                   Більше
                 </a>
               </div>
@@ -80,7 +81,7 @@ export default function Home({ DB }) {
               <div className="news__info">
                 <span>16.04.2021</span>
                 <h4>Нове обладнення</h4>
-                <a href="" className="news__more">
+                <a href="https://www.google.com.ua/" className="news__more">
                   Більше
                 </a>
               </div>
@@ -92,7 +93,7 @@ export default function Home({ DB }) {
               <div className="news__info">
                 <span>16.04.2021</span>
                 <h4>Нове обладнення</h4>
-                <a href="" className="news__more">
+                <a href="https://www.google.com.ua/" className="news__more">
                   Більше
                 </a>
               </div>
@@ -104,13 +105,14 @@ export default function Home({ DB }) {
               <div className="news__info">
                 <span>16.04.2021</span>
                 <h4>Нове обладнення</h4>
-                <a href="" className="news__more">
+                <a href="https://www.google.com.ua/" className="news__more">
                   Більше
                 </a>
               </div>
             </div>
           </div>
         </div>
+       
       </section>
     </React.Fragment>
   );

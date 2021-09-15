@@ -19,9 +19,9 @@ export default function Gallery({ DB }) {
     });
     setFilter(updatedItems);
   };
-  const openFullGallery = (el) => {
+  const openFullGallery = (img,alt) => {
     setFullGallery(!fullGallery);
-    ReactDOM.render(<img src={el} />, document.getElementById("fullGallery"));
+    ReactDOM.render(<img src={img} alt={alt} />, document.getElementById("fullGallery"));
   };
   const [fullGallery, setFullGallery] = React.useState(false);
   return (
@@ -44,7 +44,7 @@ export default function Gallery({ DB }) {
               <div
                 className="gallery__item"
                 key={index}
-                onClick={() => openFullGallery(item.img)}
+                onClick={() => openFullGallery(item.img, item.alt)}
               >
                 <img src={item.img} alt={item.alt} />
                 <div className="gallery__info">
@@ -57,7 +57,7 @@ export default function Gallery({ DB }) {
         </div>
         <div
           id="fullGallery"
-          className={fullGallery && "fullGallery"}
+          className={fullGallery ? "fullGallery" : ""}
           onClick={() => openFullGallery(null)}
         ></div>
       </section>

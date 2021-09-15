@@ -5,11 +5,6 @@ import googleMapStyles from "./GoogelMapStyle.jsx"
 
 export class Maps extends React.Component {
     render() {
-      const mapStyles = {
-        width: "100%",
-        height: "100%",
-        color:"#10A9B7"
-      };
       return (
         <Map
             google={this.props.google}
@@ -24,5 +19,5 @@ export class Maps extends React.Component {
   }
   Maps.defaultProps = googleMapStyles;
   export default GoogleApiWrapper({
-    apiKey: "AIzaSyCdOKftjAiszr4Ilzrk93JLqF66qdil7XM",
-})(Maps);                                                 
+    apiKey: "AIzaSyA5pOrhw2oM_deEAQHUTn7cbVj3mqVF7VU",
+})(Maps);                                                  

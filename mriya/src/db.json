@@ -115,7 +115,7 @@
                         "alt":"Rodos"
                     },
                     {
-                        "img":"./assets/img/partner/Stray.svg",
+                        "img":"./assets/img/partner/stray.svg",
                         "alt":"Stray"
                     },
                     {
@@ -187,7 +187,7 @@
         ],
         "homeTab":[
             {
-                "link":"",
+                "link":"/Metal-plastic-products",
                 "description":"Металопластикові вироби",
                 "number":"1"
             },
@@ -209,7 +209,7 @@
         ],
         "catalog":[
             {
-                "link":"",
+                "link":"/Metal-plastic-products",
                 "name":"Металопластикові вироби",
                 "slide":[
                     {
