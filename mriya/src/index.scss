@@ -1052,15 +1052,17 @@ section {
   max-width: 648px;
   position: relative;
   overflow: hidden;
+
+  .swiper-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
 }
 
-.catalog__wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
-}
+
 
 .catalog__slide {
   flex: 0 0 100%;
@@ -1152,12 +1154,14 @@ section {
 
 .partner__containe {
   overflow-x: hidden;
+
+  .swiper-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
-.partner__wrapper {
-  display: flex;
-  justify-content: space-between;
-}
+
 
 .partner__slide {
   flex: 0 0 25%;

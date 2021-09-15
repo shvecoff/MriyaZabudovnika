@@ -3,7 +3,7 @@ import Benefits from "../Components/Benefits";
 import HeroTab from "../Components/HeroTab";
 import HomeCatalog from "../Components/HomeCatalog";
 import MainForm from "../Components/MainForm";
-import Partners from '../Components/Partners'
+import Partners from "../Components/Partners";
 
 export default function Home({ DB }) {
   return (
@@ -39,7 +39,7 @@ export default function Home({ DB }) {
         </div>
       </section>
       <HomeCatalog DB={DB} />
-      <Partners DB={DB}/>
+      <Partners DB={DB} />
       <MainForm />
       <section className="portfolio">
         <div className="container">
@@ -68,7 +68,7 @@ export default function Home({ DB }) {
               <div className="news__info">
                 <span>16.04.2021</span>
                 <h4>Нове обладнення</h4>
-                <a href="" className="news__more">
+                <a href="http://google.com.ua/" className="news__more">
                   Більше
                 </a>
               </div>
@@ -80,7 +80,7 @@ export default function Home({ DB }) {
               <div className="news__info">
                 <span>16.04.2021</span>
                 <h4>Нове обладнення</h4>
-                <a href="" className="news__more">
+                <a href="http://google.com.ua/" className="news__more">
                   Більше
                 </a>
               </div>
@@ -92,7 +92,7 @@ export default function Home({ DB }) {
               <div className="news__info">
                 <span>16.04.2021</span>
                 <h4>Нове обладнення</h4>
-                <a href="" className="news__more">
+                <a href="http://google.com.ua/" className="news__more">
                   Більше
                 </a>
               </div>
@@ -104,7 +104,7 @@ export default function Home({ DB }) {
               <div className="news__info">
                 <span>16.04.2021</span>
                 <h4>Нове обладнення</h4>
-                <a href="" className="news__more">
+                <a href="http://google.com.ua/" className="news__more">
                   Більше
                 </a>
               </div>

@@ -18,26 +18,26 @@ export default function Footer() {
         <div className="footer__column">
           <ul className="footer__menu">
             <li>
-              <a href="">Каталог</a>
+              <a href="http://google.com.ua/">Каталог</a>
             </li>
             <li>
-              <a href="">Галерея</a>
+              <a href="http://google.com.ua/">Галерея</a>
             </li>
             <li>
-              <a href="">Партнери</a>
+              <a href="http://google.com.ua/">Партнери</a>
             </li>
             <li>
-              <a href="">Про нас</a>
+              <a href="http://google.com.ua/">Про нас</a>
             </li>
           </ul>
         </div>
         <div className="footer__column">
           <h5>Слідкуйте за нами</h5>
           <div className="footer__social">
-            <a href="">
+            <a href="http://google.com.ua/">
               <img src="./assets/img/instagram.svg" alt="" />
             </a>
-            <a href="">
+            <a href="http://google.com.ua/">
               <img src="./assets/img/facebook.svg" alt="" />
             </a>
           </div>

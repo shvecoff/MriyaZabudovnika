@@ -1,5 +1,8 @@
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SwiperCore, { Navigation } from "swiper";
 
+SwiperCore.use([Navigation]);
 export default function HomeCatalog({ DB }) {
   return (
     <section className="catalog">
@@ -7,19 +10,25 @@ export default function HomeCatalog({ DB }) {
         <h2 className="title">Каталог</h2>
         {DB.catalog.map((catalog, index) => (
           <div className="catalog__flex" key={index}>
-            <div className="catalog__container">
-              <div className="catalog__wrapper">
-                {catalog.slide.map((slide, index) => (
-                  <div className="catalog__slide" key={index}>
-                    <img src={slide.img} alt="" />
-                  </div>
-                ))}
-              </div>
+            <Swiper
+              className="catalog__container"
+              navigation={{
+                prevEl: ".catalog-button-prev",
+                nextEl: ".catalog-button-next",
+                disabledClass: "catalog-button-disabled",
+              }}
+              slidesPerView={"auto"}
+            >
+              {catalog.slide.map((slide, index) => (
+                <SwiperSlide className="catalog__slide" key={index}>
+                  <img src={slide.img} alt="" />
+                </SwiperSlide>
+              ))}
               <div className="catalog__navigation">
                 <div className="catalog-button-prev"></div>
                 <div className="catalog-button-next"></div>
               </div>
-            </div>
+            </Swiper>
             <div className="catalog__text">
               <div className="catalog__top">
                 <h3 className="catalog__title">{catalog.name}</h3>
