@@ -94,7 +94,7 @@
                 "img":"./assets/img/ofer/service1.jpg",
                 "alt":"Металопластикові вироби",
                 "title":"Металопластикові вироби",
-                "link":"",
+                "link":"/metalPlasticProducts",
                 "description":"Вікна, двері, конструкції для балконів та лоджій, металопластикові труби, водостічні системи від виробника",
                 "partner":[
                     {
@@ -187,7 +187,7 @@
         ],
         "homeTab":[
             {
-                "link":"/Metal-plastic-products",
+                "link":"/metalPlasticProducts",
                 "description":"Металопластикові вироби",
                 "number":"1"
             },
@@ -209,7 +209,7 @@
         ],
         "catalog":[
             {
-                "link":"/Metal-plastic-products",
+                "link":"/metalPlasticProducts",
                 "name":"Металопластикові вироби",
                 "slide":[
                     {

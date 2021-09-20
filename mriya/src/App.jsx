@@ -5,18 +5,15 @@ import DB from "./db.json";
 
 import "animate.css";
 
-
 import Footer from "./Components/Footer";
 import Home from "./Page/Home.jsx";
 import Offer from "./Page/Offer.jsx";
-import Service from './Page/Service.jsx'
-import Contact from './Page/Contact.jsx'
+import Service from "./Page/Service.jsx";
+import Contact from "./Page/Contact.jsx";
 import Gallery from "./Page/Gallery.jsx";
-import MetalPlasticProducts from "./Page/MetalPlasticProducts.jsx"
-
+import MetalPlasticProducts from "./Page/MetalPlasticProducts.jsx";
 
 function App() {
-
   return (
     <div className="wrapper">
       <Header />
@@ -25,19 +22,19 @@ function App() {
           <Home DB={DB} />
         </Route>
         <Route path="/offer">
-          <Offer  DB={DB}/>
+          <Offer DB={DB} />
         </Route>
         <Route path="/service">
-          <Service/>
+          <Service />
         </Route>
         <Route path="/gallery">
-          <Gallery DB={DB}/>
+          <Gallery DB={DB} />
         </Route>
         <Route path="/contact">
-          <Contact/>
+          <Contact />
         </Route>
-        <Route path="/Metal-plastic-products">
-          <MetalPlasticProducts/>
+        <Route path="/metalPlasticProducts">
+          <MetalPlasticProducts />
         </Route>
       </main>
       <Footer />
