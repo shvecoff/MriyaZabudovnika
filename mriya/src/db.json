@@ -107,7 +107,7 @@
                 "img":"./assets/img/ofer/service2.jpg",
                 "alt":"Вхідні , міжкімнаті двері",
                 "title":"Вхідні , міжкімнаті двері",
-                "link":"",
+                "link":"/enterDors",
                 "description":"Металеві двері, плита мдф, ковка і скло",
                 "partner":[
                     {
@@ -192,7 +192,7 @@
                 "number":"1"
             },
             {
-                "link":"",
+                "link":"/enterDors",
                 "description":"Вхідні , міжкімнаті двері",
                 "number":"2"
             },
@@ -244,7 +244,7 @@
                 ]
             },
             {
-                "link":"",
+                "link":"/enterDors",
                 "name":"Вхідні , міжкімнаті двері",
                 "slide":[
                     {

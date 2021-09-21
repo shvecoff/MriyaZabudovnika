@@ -12,6 +12,7 @@ import Service from "./Page/Service.jsx";
 import Contact from "./Page/Contact.jsx";
 import Gallery from "./Page/Gallery.jsx";
 import MetalPlasticProducts from "./Page/MetalPlasticProducts.jsx";
+import EnterDors from "./Page/EnterDors.jsx";
 
 function App() {
   return (
@@ -35,6 +36,9 @@ function App() {
         </Route>
         <Route path="/metalPlasticProducts">
           <MetalPlasticProducts />
+        </Route>
+        <Route path="/enterDors">
+          <EnterDors />
         </Route>
       </main>
       <Footer />
