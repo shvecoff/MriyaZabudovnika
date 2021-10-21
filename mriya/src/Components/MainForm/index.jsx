@@ -1,6 +1,9 @@
 import React from "react";
-
 export default function MainForm() {
+  function handleSubmit(e) {
+    e.preventDefault();
+    console.log("Отправлена форма.");
+  }
   return (
     <section className="main__form">
       <div className="container">
@@ -11,18 +14,22 @@ export default function MainForm() {
               Замовити заміри, доставку, отримати інформацію про
               металопластикові вироби, міжкімнатні та вхідні двері, секційні
               ворота, замір, монтаж - заповніть форму і менеджер зважиться з
-              вами найближчим часом{" "}
+              вами найближчим часом
             </p>
           </div>
           <div className="form__main">
-            <form action="">
+            <form method="post" className="main-form" onSubmit={handleSubmit}>
               <input
                 type="text"
+                name="user_name"
+                id="user_name"
                 placeholder="Ім`я"
                 className="form__main-input"
               />
               <input
                 type="tel"
+                name="user_phone"
+                id="user_phone"
                 placeholder="Номер телефону"
                 className="form__main-input"
               />
@@ -42,6 +49,7 @@ export default function MainForm() {
                 type="submit"
                 value="Надіслати"
                 className="form__main-btn"
+                id="sendMail"
               />
             </form>
           </div>

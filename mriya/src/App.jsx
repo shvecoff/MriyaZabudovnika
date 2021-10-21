@@ -13,6 +13,7 @@ import Contact from "./Page/Contact.jsx";
 import Gallery from "./Page/Gallery.jsx";
 import MetalPlasticProducts from "./Page/MetalPlasticProducts.jsx";
 import EnterDors from "./Page/EnterDors.jsx";
+import SectionalGates from "./Page/SectionalGates.jsx";
 
 function App() {
   return (
@@ -39,6 +40,9 @@ function App() {
         </Route>
         <Route path="/enterDors">
           <EnterDors />
+        </Route>
+        <Route path="/SectionalGates">
+          <SectionalGates />
         </Route>
       </main>
       <Footer />

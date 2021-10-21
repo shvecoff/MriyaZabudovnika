@@ -18,16 +18,13 @@ export default function Footer() {
         <div className="footer__column">
           <ul className="footer__menu">
             <li>
-              <a href="https://www.google.com.ua/">Каталог</a>
+              <a href="/offer">Ми пропонуємо</a>
             </li>
             <li>
-              <a href="https://www.google.com.ua/">Галерея</a>
+              <a href="/gallery">Галерея</a>
             </li>
             <li>
-              <a href="https://www.google.com.ua/">Партнери</a>
-            </li>
-            <li>
-              <a href="https://www.google.com.ua/">Про нас</a>
+              <a href="/about-us">Про нас</a>
             </li>
           </ul>
         </div>

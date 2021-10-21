@@ -136,7 +136,7 @@
                 "img":"./assets/img/ofer/service3.jpg",
                 "alt":"Секційні ворота",
                 "title":"Секційні ворота",
-                "link":"",
+                "link":"/SectionalGates",
                 "description":"Секційні ворота,ролетні ворота, промислові ворота, панорамні ворота, в'їзні ворота, відкатні ворота",
                 "partner":[
                     {
@@ -197,7 +197,7 @@
                 "number":"2"
             },
             {
-                "link":"",
+                "link":"/SectionalGates",
                 "description":"Секційні ворота",
                 "number":"3"
             },
@@ -276,7 +276,7 @@
                 ]
             },
             {
-                "link":"",
+                "link":"/SectionalGates",
                 "name":"Секційні ворота",
                 "slide":[
                     {

@@ -12,6 +12,11 @@ export default function Header() {
           </Link>
         </div>
         <div className="header__menu">
+          <div className="header__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
           <nav className="menu">
             <ul className="menu__list">
               <li className="menu__item">

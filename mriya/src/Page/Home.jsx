@@ -4,9 +4,9 @@ import Benefits from "../Components/Benefits";
 import HeroTab from "../Components/HeroTab";
 import HomeCatalog from "../Components/HomeCatalog";
 import MainForm from "../Components/MainForm";
-import Partners from '../Components/Partners'
+import Partners from "../Components/Partners";
 
-export default function Home({ DB,testApi }) {
+export default function Home({ DB, testApi }) {
   return (
     <React.Fragment>
       <section className="hero">
@@ -19,10 +19,12 @@ export default function Home({ DB,testApi }) {
                 дверей
               </p>
               <div className="hero__form">
-                <form onSubmit={testApi}>
+                <form action="../telegram.php" method="post">
                   <input
                     type="tel"
+                    name="user_phone"
                     className="hero__input"
+                    id="user_phone"
                     placeholder="Номер телефону"
                   />
                   <input type="submit" className="hero__button" value="" />
@@ -40,7 +42,7 @@ export default function Home({ DB,testApi }) {
         </div>
       </section>
       <HomeCatalog DB={DB} />
-      <Partners DB={DB}/>
+      <Partners DB={DB} />
       <MainForm />
       <section className="portfolio">
         <div className="container">
@@ -112,7 +114,6 @@ export default function Home({ DB,testApi }) {
             </div>
           </div>
         </div>
-       
       </section>
     </React.Fragment>
   );

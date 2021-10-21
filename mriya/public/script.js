@@ -574,8 +574,8 @@
 }.call(this));
 
 //main.js file
-  document.addEventListener("DOMContentLoaded",function(){
-    new WOW().init();
+document.addEventListener("DOMContentLoaded", function () {
+  new WOW().init();
 
   const header = document.querySelector("header");
   let windowScroll = window;
@@ -596,6 +596,4 @@
       catalogItem[i].classList.add("animate__fadeInLeft");
     }
   }
-})
-
-
+});
